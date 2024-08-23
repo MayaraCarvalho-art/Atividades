@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaTotal (gasolina, distancia, consumo) {
+
+        return (distancia/consumo) * gasolina;
+}
+
+var nome = prompt("Informe o seu nome");
+var gasolina = prompt(nome + ", por favor, informe o preço do litro da gasolina");
+var distancia = prompt(nome + ", agora, informe a distância que será percorrida");
+var consumo = prompt(nome + ", qual consumo médio do seu veículo?")
+var totalViagem = calculaTotal(gasolina, distancia, consumo).toFixed(2);
+
+mostra(nome + ", o custo total desta viagem será de R$ " + totalViagem);  
+
+</script>
+
